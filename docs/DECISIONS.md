@@ -55,6 +55,7 @@ One entry per non-obvious choice. Newest at the bottom.
 - The Amazon listing I considered listed 256 KB of flash. A real F411CEU6 has 512 KB, and decision 001's config storage needs the last 128 KB sector, which only exists on a 512 KB part.
 - DFRobot is an established distributor. Its listing has the correct specs, links WeAct's GitHub, and states in writing that it uses original ST chips.
 - The Nucleo-F411RE carries the least risk, but it's a large board that doesn't match the Black Pill layout I'll mirror on my PCB.
-- I bought two so a damaged board doesn't stall the project while I wait for international shipping. (See decision 005 for how the second board is used.)
+- I bought two so a damaged board doesn't stall the project while I wait for international shipping. (See decision 005 for how the second board is used.)  
+
 **Verification on arrival:** read `DBGMCU_IDCODE` (device ID 0x431) and the flash-size register (512 KB) over SWD, and check the chip marking. Results are logged here.  
 **Revisit if:** either board fails silicon verification.  
