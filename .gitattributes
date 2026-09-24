@@ -1,0 +1,8 @@
+# Keep LF line endings in the repo and working copy on every OS
+* text=auto eol=lf
+
+# Binary files: never convert
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary
