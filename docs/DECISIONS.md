@@ -58,3 +58,14 @@ One entry per non-obvious choice. Newest at the bottom.
 - I bought two so a damaged board doesn't stall the project while I wait for international shipping. (See decision 005 for how the second board is used.)
 **Verification on arrival:** read `DBGMCU_IDCODE` (device ID 0x431) and the flash-size register (512 KB) over SWD, and check the chip marking. Results are logged here.
 **Revisit if:** either board fails silicon verification.
+
+---
+
+## 005 — Debug probe: second Black Pill as SWD debugger
+**Status:** Proposed
+**Date:** 2026-09-26
+**Decision:** Use the second Black Pill as the SWD debugger instead of buying an
+ST-LINK clone. Firmware choice pending until boards arrive.
+**Options:**
+- CMSIS-DAP (DFRobot/WeAct firmware) — works with OpenOCD (already installed)
+- Black Magic Probe — GDB talks to the probe directly, no OpenOCD; well documented for this board
